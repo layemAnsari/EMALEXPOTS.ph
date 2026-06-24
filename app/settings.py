@@ -32,6 +32,7 @@ DEBUG = 'RENDER_EXTERNAL_HOSTNAME' not in os.environ
 
 # ALLOWED_HOSTS = ['emalexpots-ph.onrender.com', 'localhost']
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+print("RENDER_EXTERNAL_HOSTNAME======", RENDER_EXTERNAL_HOSTNAME)
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS = [RENDER_EXTERNAL_HOSTNAME]
 else:
@@ -94,12 +95,7 @@ DATABASES = {
         conn_max_age=600,
         conn_health_checks=True,
     )
-    # 'HOST':'aws-1-ap-southeast-2.pooler.supabase.com',
-    # 'PORT':'6543',
-    # 'NAME':'emalexpots'
 }
-
-print(DATABASES)
 
 if 'sqlite' not in DATABASES['default']['ENGINE']:
     DATABASES['default']['OPTIONS'] = {

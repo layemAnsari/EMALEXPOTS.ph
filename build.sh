@@ -9,7 +9,8 @@ pip install -r requirements.txt
 python manage.py collectstatic --noinput
 
 # 3. Swap the string out to Session mode and run your migrations
+python manage.py makemigrations --noinput
 python manage.py migrate --noinput
 
-export DATABASE_URL="$DIRECT_URL"
+# export DATABASE_URL="$DIRECT_URL"
 python manage.py runserver 0.0.0.0:80
