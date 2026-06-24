@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-local-dev-key-
 # SECRET_KEY = 'django-insecure-ka7thatp)8sm&#a0o1fy=a(8y%f*te)ykwcyrlq)m)svm850iw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'RENDER_EXTERNAL_HOSTNAME' not in os.environ
 
 # ALLOWED_HOSTS = ['emalexpots-ph.onrender.com', 'localhost']
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -75,6 +75,11 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',   # 1. Handles your admin username/password
+    'your_app_name.backends.SupabaseAuthBackend',  # 2. Handles customers using Google/Social
 ]
 
 WSGI_APPLICATION = 'app.wsgi.application'
