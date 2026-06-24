@@ -93,10 +93,10 @@ DATABASES = {
         default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3'),
         conn_max_age=600,
         conn_health_checks=True,
-    ),
-    'HOST':'aws-1-ap-southeast-2.pooler.supabase.com',
-    'PORT':'6543',
-    'NAME':'emalexpots'
+    )
+    # 'HOST':'aws-1-ap-southeast-2.pooler.supabase.com',
+    # 'PORT':'6543',
+    # 'NAME':'emalexpots'
 }
 
 print(DATABASES)
