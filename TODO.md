@@ -1,8 +1,7 @@
-- [x] Analyze existing Django routing and view setup
-- [x] Implement `views.home` to serve `emalexpots/static/static/index.html`
-- [x] Ensure correct URL mapping in `app/urls.py` (existing `home/` route)
-- [x] Run Django dev server / sanity test that `/home/` renders React index.html
-- [ ] (If needed) add `/` redirect to `/home/`
-
+- [ ] Create modern minimalist pottery front page
+  - [x] Replace `emalexpots.ph/src/App.js` with Tailwind-based UI (hero + best-sellers cards + catalog cards + footer)
+  - [x] Ensure app uses no external data/images (use placeholders and existing logo)
+  - [ ] Run React production build
+  - [ ] Verify Django `/home/` serves updated build
 
 
