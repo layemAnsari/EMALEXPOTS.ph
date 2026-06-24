@@ -96,6 +96,8 @@ DATABASES = {
     )
 }
 
+print(DATABASES)
+
 if 'sqlite' not in DATABASES['default']['ENGINE']:
     DATABASES['default']['OPTIONS'] = {
         'options': '-c search_path=emalexpots'
