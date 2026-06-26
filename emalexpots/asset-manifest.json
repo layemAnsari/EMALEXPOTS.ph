@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53ab7804.css",
+    "main.js": "/static/js/main.691aa93f.js",
+    "static/media/layeredpots.psd": "/static/media/layeredpots.2489e6355374abad5799.psd",
+    "static/media/pots4.png": "/static/media/pots4.bce331d5a8d0aa9eeb23.png",
+    "static/media/apmc.png": "/static/media/apmc.d9ae2f1665680ed48e35.png",
+    "static/media/bg.jpg": "/static/media/bg.93e1384330e81a1341d3.jpg",
+    "index.html": "/index.html",
+    "main.53ab7804.css.map": "/static/css/main.53ab7804.css.map",
+    "main.691aa93f.js.map": "/static/js/main.691aa93f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53ab7804.css",
+    "static/js/main.691aa93f.js"
+  ]
+}
