@@ -6,11 +6,11 @@ set -o errexit
 pip install -r requirements.txt
 
 # 2. Collect static files (optional but highly recommended for Django)
-python manage.py collectstatic --noinput
+# python manage.py collectstatic --noinput
 
 # 3. Swap the string out to Session mode and run your migrations
-python manage.py makemigrations --noinput
+# python manage.py makemigrations --noinput
 python manage.py migrate --noinput
 
 # export DATABASE_URL="$DIRECT_URL"
-python manage.py runserver 0.0.0.0:80
+python manage.py runserver
