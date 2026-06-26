@@ -106,7 +106,7 @@ if 'sqlite' not in DATABASES['default']['ENGINE']:
 # Password validation
 
 
-STATIC_URL = 'static/'
+STATIC_URL = 'emalexpots/'
 STATIC_ROOT = BASE_DIR / 'staticFiles'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'emalexpots'), 
