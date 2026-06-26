@@ -109,7 +109,7 @@ if 'sqlite' not in DATABASES['default']['ENGINE']:
 STATIC_URL = 'emalexpots/'
 STATIC_ROOT = BASE_DIR / 'staticFiles'
 STATICFILES_DIRS = [
-    BASE_DIR / 'emalexpots', 
+    BASE_DIR / 'emalexpots' / 'static', 
 ]
 
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
