@@ -107,7 +107,7 @@ if 'sqlite' not in DATABASES['default']['ENGINE']:
 
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATIC_ROOT = BASE_DIR / 'emalexpots' / 'static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'emalexpots'), 
 ]
