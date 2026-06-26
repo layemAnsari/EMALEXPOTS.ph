@@ -66,7 +66,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'emalexpots')],
+        'DIRS': [BASE_DIR / 'emalexpots'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -109,7 +109,7 @@ if 'sqlite' not in DATABASES['default']['ENGINE']:
 STATIC_URL = 'emalexpots/'
 STATIC_ROOT = BASE_DIR / 'staticFiles'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'emalexpots'), 
+    BASE_DIR / 'emalexpots', 
 ]
 
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
