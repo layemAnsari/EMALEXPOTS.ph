@@ -1,10 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Django React Fullstack App",
-  "icons": [],
+  "short_name": "EMALEXPOTS",
+  "name": "EMALEXPOTS.ph",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
-
