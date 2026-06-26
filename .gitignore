@@ -1,0 +1,44 @@
+# --- Build Outputs ---
+# Excludes your custom dist/ folder and the default build/ folder from git add
+emalexpots.ph/
+build/
+*.sqlite3
+obj/
+
+# --- Dependencies ---
+# Never track the massive node_modules folder
+node_modules/
+jspm_packages/
+web_modules/
+
+# --- Tailwind & Build Artifacts ---
+# Excludes local CSS build logs or temporary cache allocations
+.pnp/
+.pnp.js
+.turbo/
+package-lock.json
+
+# --- Photoshop & Source Assets Metadata ---
+# Prevents massive .psd files from bloat-tracking if you prefer them offline
+*.psb
+*.tmp
+
+# --- Environment & Secrets ---
+# Keeps API tokens, local keys, and secret configurations hidden
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Operating System & IDE Logs ---
+# Cleans out system garbage files and editor configurations
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
