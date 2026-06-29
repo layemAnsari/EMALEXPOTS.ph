@@ -11,7 +11,7 @@ fi
 pip install -r requirements.txt
 
 # 3. Collect static files into the missing directory
-python manage.py collectstatic --noinput
+# python manage.py collectstatic --noinput
 
 # 4. Run your migrations safely into Supabase
 python manage.py migrate --noinput
