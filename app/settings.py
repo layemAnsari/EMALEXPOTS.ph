@@ -104,11 +104,7 @@ if 'sqlite' not in DATABASES['default']['ENGINE']:
     }
 
 
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'staticFiles'
-STATICFILES_DIRS = [
-    BASE_DIR / 'emalexpots', 
-]
+
 
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
@@ -143,4 +139,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticFiles'
+STATICFILES_DIRS = [
+    BASE_DIR / 'emalexpots', 
+]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
