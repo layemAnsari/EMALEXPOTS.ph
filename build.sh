@@ -13,4 +13,3 @@ pip install -r requirements.txt
 python manage.py migrate --noinput
 
 # export DATABASE_URL="$DIRECT_URL"
-python manage.py runserver 0.0.0.0:80
