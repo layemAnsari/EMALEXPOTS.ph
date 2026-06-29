@@ -103,10 +103,7 @@ if 'sqlite' not in DATABASES['default']['ENGINE']:
     }
 
 
-# Password validation
-
-
-STATIC_URL = 'emalexpots/'
+STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticFiles'
 STATICFILES_DIRS = [
     BASE_DIR / 'emalexpots', 
