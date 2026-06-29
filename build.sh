@@ -2,14 +2,16 @@
 # Exit immediately if a command exits with a non-zero status
 set -o errexit
 
-# 1. Install all dependencies from your file
+# 1. Swap connection strings for the build phase (Crucial for Supabase)
+if [ -n "$DIRECT_URL" ]; then
+    export DATABASE_URL="$DIRECT_URL"
+fi
+
+# 2. Install all dependencies from your file
 pip install -r requirements.txt
 
-# 2. Collect static files (optional but highly recommended for Django)
+# 3. Collect static files into the missing directory
 python manage.py collectstatic --noinput
 
-# 3. Swap the string out to Session mode and run your migrations
-# python manage.py makemigrations --noinput
+# 4. Run your migrations safely into Supabase
 python manage.py migrate --noinput
-
-# export DATABASE_URL="$DIRECT_URL"
