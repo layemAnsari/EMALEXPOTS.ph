@@ -136,11 +136,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-import mimetypes
-
-# Force Linux/Render to register the correct web standard extensions
-mimetypes.add_type("application/javascript", ".js", True)
-mimetypes.add_type("text/css", ".css", True)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
@@ -152,3 +147,9 @@ STATICFILES_DIRS = [
 
 WHITENOISE_INDEX_FILE = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
